@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Economy Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Global Economy Simulator</h1>
+    <div id="start-screen">
+      <p>Select a country to begin your journey as an economic leader.</p>
+      <div class="country-buttons">
+        <button onclick="startGame('USA')">USA</button>
+        <button onclick="startGame('China')">China</button>
+        <button onclick="startGame('Germany')">Germany</button>
+        <button onclick="startGame('India')">India</button>
+      </div>
+    </div>
+
+    <div id="game-ui" class="hidden">
+      <h2 id="player-country"></h2>
+      <div id="stats"></div>
+      <div class="actions">
+        <button onclick="trade()">Trade</button>
+        <button onclick="invest()">Invest</button>
+        <button onclick="nextTurn()">Next Turn</button>
+      </div>
+      <div id="log"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
